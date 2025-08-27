@@ -1,1 +1,124 @@
 /* your code here */
+footer {
+  background: #181818;
+  color: #fff;
+  width: 100%;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+.content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px 20px;
+}
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-details {
+  font-size: 2em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.media-icons {
+  display: flex;
+  gap: 15px;
+}
+.media-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: #222;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.4em;
+  transition: background 0.3s;
+}
+.media-icons a:hover {
+  background: #444;
+}
+
+.link-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.link-boxes .box {
+  list-style: none;
+  min-width: 180px;
+}
+.link-boxes .link_name {
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #313131;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.link-boxes li {
+  margin-bottom: 10px;
+}
+.link-boxes a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.link-boxes a:hover {
+  color: #fff;
+}
+.link-boxes li span {
+  color: #bbb;
+  font-size: 0.99em;
+}
+
+.bottom-details {
+  background: #232323;
+  padding: 15px 0;
+}
+.bottom_text {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #bbb;
+  font-size: 1em;
+  padding: 0 20px;
+}
+.bottom_text a {
+  color: #bbb;
+  text-decoration: none;
+  margin-left: 15px;
+}
+.bottom_text a:hover {
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .top, .bottom_text {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .link-boxes {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .link-boxes {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .content {
+    padding: 30px 10px 10px;
+  }
+}
